@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>웹 테일블 예제</title>
+</head>
+<style>
+ table { width: 800px;
+  height: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color:darkgrey;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-left: none;
+  border-right: none;
+  }
+
+  thead { 
+  height: 30px;
+  background-color: blue; 
+  color: white;
+  }
+
+  td {
+  border-width: 1px;
+  border-style: solid;
+  border-color: darkgrey;
+  height: 25px;
+    }
+  .border_Bottom{border-bottom: 2px solid #000;}
+  .border_Width_5px{border-bottom-width:50px;}
+  .border_Left_none{border-left: none;}
+  .border_Right_none{border-right: none;}
+  
+  .table_Background{ background-color: cornflowerblue;}
+
+  .thead_Width01 {width: 50px;}
+  .thead_Width02 {width: 130px;}
+  .thead_Width03 {width: 100px;}
+  .thead_Width04 {width: 100px;}
+  .thead_Width05 {width: 360px;}
+  .thead_Width06 {width: 60px;}
+
+  .img_Widtht {
+    width:130px;
+    height:75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  }
+
+</style>
+<body>
+  <table>
+    <colgroup>
+    <col class="thead_Width01">
+    <col class="thead_Width02">
+    <col class="thead_Width03">
+    <col class="thead_Width04">
+    <col class="thead_Width05">
+    <col class="thead_Width06">
+  </colgroup>
+     <caption>웹개발자 채용 정보</caption>
+     <thead>
+    <tr >
+      <th>NO.</th>
+      <th>회사</th>
+      <th>회사명</th>
+      <th>마감일</th>
+      <th>지원분야</th>
+      <th>링크</th>
+    </tr>
+  </thead>
+  <tbody >
+    <tr >
+      <td rowspan="3"  class="border_Left_none">1</td>
+      <td rowspan="3"><img class="img_Widtht" src="https://picsum.photos/250/250"  alt="회사로고 입니다."></td>
+      <td>rockit</td>
+      <td>8.14</td>
+      <td>웹서비스</td>
+      <td rowspan="2" class="border_Right_none"><a href="#">지원</a></td>
+    </tr>
+    <tr>
+      <td colspan="3">프론트엔드 개발자 최소 4,00만원 / 신입, 경력</td>
+    </tr>
+    <tr  class="border_Bottom">
+      <td colspan="4" class="border_Right_none" >클라우드 기술을 기반으로 IT기술 교육 서비스를 제공합니다.</td>
+    </tr>
+
+    <tr class="table_Background">
+      <td rowspan="3" class="border_Left_none">2</td>
+      <td rowspan="3"><img class="img_Widtht" src="https://picsum.photos/250/250"  alt="회사로고 입니다."></td>
+      <td>rich</td>
+      <td>9.01</td>
+      <td>웹서비스</td>
+      <td rowspan="2"><a href="#" class="border_Right_none">지원</a></td>
+    </tr>
+    <tr class="table_Background">
+      <td colspan="3">웹 개발자 최소 2.500만원 / 신입/td>
+    </tr>
+    <tr class="table_Background border_Bottom">
+      <td colspan="4" class="border_Right_none">클라우드 기술을 기반으로 IT기술 교육 서비스를 제공합니다.</td>
+    </tr>
+
+    <tr>
+      <td rowspan="3" class="border_Left_none">3</td>
+      <td rowspan="3"><img class="img_Widtht" src="https://picsum.photos/250/250"  alt="회사로고 입니다."></div></td>
+      <td>rose</td>
+      <td>7.01</td>
+      <td>웹서비스,소프트웨어개발</td>
+      <td rowspan="2" class="border_Right_none"><a href="#">지원</a></td>
+    </tr>
+    <tr>
+      <td colspan="3">프론트엔드 개발자 최소 4,00만원 / 신입, 경력</td>
+    </tr>
+    <tr  class="border_Bottom">
+      <td colspan="4" class="border_Right_none">화훼 농작물 관리시스템 구축 서비스를 제공합니다.</td>
+    </tr>
+
+    <tr class="table_Background" >
+      <td rowspan="3" class="border_Left_none">4</td>
+      <td rowspan="3"><img class="img_Widtht" src="https://picsum.photos/250/250"  alt="회사로고 입니다."></td>
+      <td>젤곰</td>
+      <td>7.24</td>
+      <td>개발</td>
+      <td rowspan="2" class="border_Right_none"><a href="#">개발</a></td>
+    </tr>
+    <tr class="table_Background">
+      <td colspan="3">프론트엔드 개발자 최소 3,00만원 / 신입, 경력</td>
+    </tr>
+    <tr class="table_Background border_Bottom">
+      <td colspan="4" class="border_Right_none">캐릭터 산업분야로 게임 및 웹개발 산업 분야.</td>
+    </tr>
+  </tbody>
+  </table>
+</body>
+</html>
