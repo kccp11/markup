@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/*a_13_border.css*/
+#wrap {
+width: 900px;
+height: auto;
+margin: auto; padding-bottom: 20px;
+background-color: #eee;}
+
+.part {
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  background-color: #aff;
+}
+
+.part > div {
+  float: left;
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  background-image: linear-gradient(60deg, white, salmon);
+}
+
+.border_01 {
+  border-width: 10px;
+  border-style: solid;
+  border-color: #777;
+}
+
+.border_02 {
+  border: solid  #f7f 30px;
+}
+.border_03 {
+  margin-top: 70px;
+ border: 20px solid #5f5; 
+ box-sizing: border-box ; /*원래는 border값은 박스 바깥에 추가로 들어가지만 border-box값을 주면 박스사이즈가 변하지 않고 박스 안쪽으로 들어간다 */
+}
+.border_04 {
+  margin-top: 70px;
+  padding: 10px;
+  border: 20px solid #479;
+  box-sizing: border-box ;
+}
+.border_05{
+  margin-top: 20px;
+  border: 30px solid #999;
+  border-left-color: #fff;
+  border-right-style: dotted;
+  border-top-width: 5px;
+}
+.border_06{
+  margin: 40px;
+  border: 10px solid #fff;
+  border-color: #fa0;
+  border-bottom-color: #f07;
+}
+
+.border_07 {
+  border-top: 10px solid #555;
+  border-left: 30px solid #aaa;
+  
+}
