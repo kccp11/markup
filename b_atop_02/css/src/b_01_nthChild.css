@@ -1,4 +1,5 @@
 /*b_01_nthChild.css*/
+.none{display: none;}
 
 .code_exam {
   width: 900px; height: auto; min-height: 1000px;
@@ -8,7 +9,7 @@
 
 .code_exam h1 {
   width: 100%; height: auto;
-  padding: 10px;
+  padding-bottom:  10px;
   font-size: 20px; font-weight: 900;
   text-align: center;
 }
@@ -22,6 +23,7 @@
   background-color: #fff;
 }
 
+
 .code_exam h2 {
   width: 100%; height: auto;
   margin-bottom: 10px;
@@ -29,12 +31,12 @@
   font-weight: 700;
 }
 
-.code_exam ul {
+.code_exam .n_child,.code_exam .n_child_02 {
   padding: 20px;border-radius: 10px;
   background-color: #fee;
 }
 
-.code_exam li {
+.code_exam .list {
   list-style: decimal;
   margin-left: 30px; margin-bottom: 10px;
 }
@@ -42,3 +44,32 @@
 
 /*---------------------*/
 
+.n_child li { font-weight: 700px;}
+.n_child li:first-child { color: #a06;}/*첫번쨰에*/
+.n_child li:nth-child(1) { text-decoration: underline;}/*n번째에*/
+.n_child li:nth-child(3) { color: #3c3;}
+.n_child li:nth-child(10) { color: #3cf;}
+.n_child li:last-child { color: #777; text-transform: uppercase; margin-bottom: 0;}/*마지막번쨰에*/
+.n_child li:nth-last-child(1) {font-size: 24px;}/*마직막에서 n번째에*/
+.n_child li:nth-last-child(3) {font-size: 24px;}/*마직막에서 n번째에*/
+
+.n_child li:nth-child(3n) {list-style-type: disc ;}/*3번째 마다*/
+.n_child li:nth-child(3n+2) {
+  list-style-type: lower-alpha; font-weight: 100;/*3번째의 +2번쨰 마다*/
+}
+
+/*------------------------------*/
+/*  .n_child_02 dt:nth-child(1) {font-weight: 700; color: #700;}
+   .n_child_02 dt:nth-child(2) {font-weight: 700; color: #700;} 
+   nth-child는 요소를 선택해서 순서가 아니라 줄로서 인식을 하기 떄문에
+   dt의 2번째가 아니라 dt의 다음 순서로 있는 줄을 인식한다 그래서 2라고 적으면 dt가 아니라 인식을 못함 
+
+   .n_child_02 dt:nth-of-type(1) {font-weight: 700; color: #700;} 
+   .n_child_02 dt:nth-of-type(2) {font-weight: 700; color: #700;} 
+  
+   nth-of-type를 쓰면 중에서 2번째라고 인식
+
+    */
+
+   .n_child_02 .list:nth-child(1) {font-weight: 700; color: #700;}
+   .n_child_02 .list:nth-child(3) {font-weight: 700; color: #700;}
