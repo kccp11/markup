@@ -1,0 +1,44 @@
+/*b_01_nthChild.css*/
+
+.code_exam {
+  width: 900px; height: auto; min-height: 1000px;
+  margin: auto; padding: 20px; box-sizing: border-box;
+  background-color: #eee;
+}
+
+.code_exam h1 {
+  width: 100%; height: auto;
+  padding: 10px;
+  font-size: 20px; font-weight: 900;
+  text-align: center;
+}
+
+.code_exam .part {
+  width: 90%; height: auto;
+  margin: auto; margin-top: 20px;
+  padding: 20px; 
+  border: 1px solid #555;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.code_exam h2 {
+  width: 100%; height: auto;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #555;
+  font-weight: 700;
+}
+
+.code_exam ul {
+  padding: 20px;border-radius: 10px;
+  background-color: #fee;
+}
+
+.code_exam li {
+  list-style: decimal;
+  margin-left: 30px; margin-bottom: 10px;
+}
+
+
+/*---------------------*/
+
