@@ -1,1 +1,63 @@
 /*/c_03_gradient*/
+.ex_wrap li {
+  width: 100%; height: 600px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  padding: 20px; padding-top: 100px; box-sizing: border-box;
+  font-size: 50px; font-weight: 700;
+  color: #fff;
+  background-color: #777;
+}
+
+.ex_wrap li:last-child { margin-bottom: 0;}
+
+.linear li:nth-child(1) {
+  background-image: url(../../icon/etc/llinnear_img.png);
+  background-repeat: repeat-x;
+  background-position: 0 -2px;
+  background-size: auto 105%;
+}
+
+.linear li:nth-child(2) {
+  background-color: #acc;
+  background-image:linear-gradient(0deg,#A440f3,#4c49da,#0095e9,#8ce3ff);
+}
+
+.linear li:nth-child(3) {
+  background-color: #acc;
+  background-image:linear-gradient(90deg, #A440f3 30%,#4c49da 30%,#0095e9 50%,#8ce3ff 50%);
+}
+
+.linear li:nth-child(4) {
+  background-color: #acc;
+  background-image:linear-gradient(45deg,rgba(255,200,0,0.1) 30%,#4c49da 30%,#0095e9 50%,#8ce3ff 50%);
+}
+
+.linear li:nth-child(5) {
+  background-color: #acc;
+  background-image:linear-gradient(45deg,rgba(255,200,0,0.1) 30%,#0095e9 50%,#8ce3ff 50%),
+  url(../../icon/back/unsplash_VkuRDf0lm5c.png);
+  background-repeat: auto, no-repeat;
+  background-position: auto, 50% 50%;
+}
+
+.radial li:nth-child(1) {
+  background-image: radial-gradient(#A440f3,#4c49da,#0095e9);
+}
+
+.radial li:nth-child(2) {
+  background-image: radial-gradient(closest-side ,#ff0033 10%,#fa0 50%,#0095e969 70%);
+}/* closest-side 모든색이 나오게 한다 */
+
+.radial li:nth-child(3) {
+  background-image: radial-gradient(circle ,#ff0033 10%,#fa0 50%,#0095e969 70%);
+}
+
+.radial li:nth-child(4) {
+  background-image: radial-gradient(circle at 0 50%,#ff0033 10%,#fa0 50%,#0095e969 70%);
+}
+
+.radial li:nth-child(5) {
+  background-image: radial-gradient(ellipse at 0 50%,#ff0033 10%,#fa0 50%,#0095e969 70%, transparent 50%),
+                    radial-gradient(ellipse at 100% 50%,#ff0033 10%,#fa0 50%,#0095e969 70%);
+}/* transparent 투명하게 ellipse 타원형으로 at 위치값*/
