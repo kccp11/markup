@@ -1,0 +1,82 @@
+/*c_02_ir_is*/
+.ir { margin-top: 10px;}
+
+.ir > li {
+  float: left;
+   width: 80px;height: 80px;
+   margin: 20px;
+   background-color: #fff;
+   background-image: url(../../icon/icon/001-restaurant.png);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: 50% auto;
+  }
+
+.ir > li:nth-child(1) {font-size:0}
+.ir > li:nth-child(2) {text-indent: -99px; overflow: hidden;}
+/*text-indent: 텍스트를 들여쓰는 기법으로 요소안에 벗어나면 overflow로 가려준다*/
+.ir > li:nth-child(3) > span { position: absolute; z-index: -1;}
+/*position: absolute을 사용하여 띄운후 z-index를 사용하여 배경 뒤로 보낸다*/
+ir > li:nth-child(4) > span {display: block; width: 0; height: 0; overflow: hidden;}
+/*display: block를 사용하여 글씨를 블럭화 시킨후 사이즈를 없애고 overflow를 사용하여 가려준다*/
+
+.ir > li:nth-child(5) > span { display: block; position: absolute; z-index: -1; width: 0; height: 0; overflow: hidden;}
+.blind { display: block; position: absolute; z-index: -1; width: 0; height: 0; overflow: hidden;}
+
+
+.ir > li:nth-child(6) { background-image: url(../../icon/icon/001-restaurant.png);}
+
+.ir > li:nth-child(6) > a {
+  display: block;
+  width: 100%;height: 100%;}
+.ir >li:nth-child(6) > a >span {display: block; width: 0; height: 0; overflow: hidden; position: absolute;  z-index: -1;background-color: #000;}
+
+.ir > li:nth-child(7) {
+  background-image: none;
+}
+
+.ir > li:nth-child(7) > a {
+  display: block; width: 100%; height: 100%;
+  background-image: url(../../icon/icon/001-restaurant.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 50% auto;
+}
+
+.ir > li:nth-child(7) a:focus {
+  background-image: url(../../icon/icon/001-restaurant.png);
+}
+
+.code_exam .is { margin-top: 10px; background-color: #adf;}
+
+.is li {
+  float: left; 
+  width: 100px;height: 100px;margin: 10px;
+  border: 1px solid #333; padding: 10px; box-sizing: border-box;
+  background-color: #fff;
+}
+
+.is li a {
+  display: block;
+  width: 64px;height: 64px;
+  background-color: #fda;
+  background-image: url("../../icon/icon-sprite/icon_dow.png");
+  background-repeat: no-repeat; background-position: 0 0; background-size: auto 64px;
+}
+
+.is li a:hover {background-color: #afc;}
+.is li a:focus {background-color: #000;}
+
+.is li a>span {
+display: block; position: absolute; z-index: -1;
+width: 0; height: 0; overflow: hidden;
+}
+
+.is li:nth-child(1) >a {background-position: -74px 0;}
+.is li:nth-child(2) >a { background-position: -148px 0;}
+.is li:nth-child(3) >a { background-position: -222px 0;}
+.is li:nth-child(4) >a { background-position: calc(-74px * 4);}
+
+
+.is li a:hover {background-color: #afc; background-position-x:calc(-74px * 0); }
+.is li a:focus {background-color: #000;}

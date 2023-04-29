@@ -1,0 +1,61 @@
+/*b_04_position*/
+.ex_wrap > ul {
+    width: 100%; height: auto;
+    border:  1px solid #333;
+    box-sizing: border-box;
+  }
+  
+  .ex_wrap li {
+    float: left;
+    width: 100px; height: 100px;
+  /*
+    background-color: #fff;
+    background-image: linear-gradient(45deg,#acf,#fda);
+    */
+  }
+  
+  
+  /*-------default------*/
+  .default { background-color: #A01994;}
+  
+  /*----static----*/
+  .static { background-color: #885C3E;}
+  /*----fixed----*/
+  .fixed { background-color: #144C3D;}
+  /*----absolute----*/
+  .absolute { background-color: #B04577;}
+  /*----relative----*/
+  .relative { background-color: #FCF919;}
+  
+  
+  /*-----------------*/
+  #wrap {height: 5000px;}
+  
+  .static {
+    position: static;
+    top:1000px; left: 500px; z-index: -10;
+  }
+  /*fixed 요소를 띄우고 스크롤를 따라 움직인다*/
+  .fixed {
+    position: fixed;
+    top:100; left:90;
+    z-index: 100;
+    /*z-index 사용하여 -값을 주면 선택할수없다*/
+  }
+  /*absolute 요소를 뜨우고 스크롤을 따라 움직이지 않는다
+    부모 조상의 속성이 포지션(position)으로 적용되있으면 부모와 조상을 기준으로 이동*/
+  .absolute {
+    position: absolute;
+    bottom: 0; left: 0;
+  
+  }
+  /*relative 요소를 띄워도 다른 요소에 영향을 주지 않는다*/
+  .relative {
+    position:relative;
+    top: 150px; left: -200px;
+    z-index: 100;
+  }
+  
+  .ex_wrap > ul {
+    position: relative;
+  }
