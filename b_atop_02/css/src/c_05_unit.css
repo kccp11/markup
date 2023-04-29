@@ -2,3 +2,30 @@
 
 
 .code_exam {width: 900px;}
+/*공통 색상*/
+.unit_set { color: #fff; background-color: #a57;}
+.unit_set p {margin:auto; margin-top: 5px; color: #171717; background-color: #fd0;}
+.unit_set button { margin-top: 10px; text-align: left; background-color: #fff;}
+.unit_set span { 
+  display: block;
+  margin-left: 20px; margin-top: 20px;
+  background-color: rgba(50,100,50,0.5);}
+  .unit_set strong { 
+    display: block;
+    margin-left: 20px; margin-top: 20px;
+    background-color:rgba(10,10,0,0.7);}
+
+/*pixel값 단위*/
+.pixel_unit {widows: 640px;height: 640px;}
+.pixel_unit p {width: 320px; height: 320px;}
+.pixel_unit button {width: 160px;height: 160px;}
+.pixel_unit span { width: 320px;height: 320px;}
+.pixel_unit strong { width: 160px;height: 160px;}
+
+
+/* 
+.pixel_unit {
+  width: 640px;height: 640px;
+  color: #fff;
+  background-color: #a57;
+} */
