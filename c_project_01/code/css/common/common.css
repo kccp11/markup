@@ -7,9 +7,19 @@
 
 .max_width_01 { widows: 95%; min-width: 940px; max-width: 1280px; margin: auto;}
 
-.blind {
-  width: 0;height: 0;
-  overflow: hidden;
-  
-}/*존재는 하는데 화면에서 가리는 방법 크기를 없애고 크기보다 넘쳐지는 요소를 오버플로우(overflow)로 가린다
+
+.first_margin > li:first-child{ margin-left: 0;}
+.last_margin > li:first-child{ margin-left: 0;}
+
+.blind_area a {
+  display: block; 
+  width: 100%; height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.blind_area a > span, 
+.blind_area button > span, 
+.blind { display: block; position: absolute; z-index: -1; width: 0; height: 0; overflow: hidden;}
+/*존재는 하는데 화면에서 가리는 방법 크기를 없애고 크기보다 넘쳐지는 요소를 오버플로우(overflow)로 가린다
   글씨일경우 font-size: 0; 를 이용하여 */

@@ -95,7 +95,11 @@
   width: 100%; height: 700px; padding-top: 62px; box-sizing: border-box; background-color: #eee;
 }
 
-.area_title { width: 940px; height: 70px; margin: auto; background-color: #ccc;}
+.area_title {
+   width: 940px; height: 70px;
+    margin: auto;  padding-top: 10px;
+    font-size: 2.5rem; 
+    background-color: #ccc;}
 
 .area_indicator {
   position: absolute; bottom: 70px; right: 0; left: 0;

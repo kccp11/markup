@@ -18,10 +18,12 @@
 
 .code_exam h1 {
   width: 100%; height: auto;
+  padding-top: 20px;
   padding-bottom:  10px;
-  font-size: 20px; font-weight: 900;
+  font-size: 35px; font-weight: 900;
   text-align: center;
 }
+.code_exam h1 > a {color: #05a;}
 
 .code_exam .part {
   width: 90%; height: auto;
@@ -32,12 +34,20 @@
   background-color: #fff;
 }
 
+.code_exam hr {margin-top: 20px; background-color: #999;}
 
 .code_exam h2 {
   width: 100%; height: auto;
   margin-bottom: 10px; padding-bottom: 10px;
   border-bottom: 1px solid #555;
   font-weight: 700;
+}
+
+.code_exam p {
+  width: 100%;
+  padding: 10px; box-sizing: border-box;
+  line-height: 1.5;
+  background-color: #eee ;
 }
 
 .code_exam .ex_wrap{

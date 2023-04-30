@@ -5,8 +5,8 @@ body { margin: 0; line-height: 100%;
 
 h6,h5,h4,h3,h2,h1,li,ol,ul,dl,dd,dt,p,pre,q,img,blockquote {
   margin: 0; padding: 0; border: 0;
-  font-size: 100%;
-  font: initial;
+  font-size: 100%; font-family: inherit;
+  line-height: 120%;
   vertical-align: baseline;
 }
 
@@ -34,4 +34,5 @@ table {border-collapse: collapse; border-spacing: 0;}
 
 abbr {text-decoration: none;}
 
-header,article,section,footer,nav,aside,figure,figcaption,main { display: block;}
+header,article,section,footer,nav,aside,figure,figcaption,main { 
+  display: block; margin: 0; padding:0; border: 0;}
