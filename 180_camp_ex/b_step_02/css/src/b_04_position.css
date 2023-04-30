@@ -1,0 +1,56 @@
+/* b_04_position.css */
+
+
+.ex_wrap > ul {
+  width: 100%; height:auto;
+  border:1px solid #333;
+  box-sizing: border-box;
+}
+
+.ex_wrap li {
+  float:left;
+  width: 100px; height: 100px; 
+  /*
+  background-color: #fff;
+  background-image:linear-gradient(45deg, #acf, #fcd);
+  */
+}
+
+.default { background-color: #F60E49;}
+.static{ background-color: #5ABED3;}
+.fixed{ background-color: #45F31D;}
+.absolute{ background-color: #0B9964;}
+.relative{ background-color: #CDD310;}
+
+/* -------------------------------------------- */
+#wrap {height: 5000px;}
+.static {
+  position:static; 
+  top:1000px; right:50px; z-index:100;
+}
+
+.fixed { 
+  position: fixed;
+  top:100px; left:90px; 
+  z-index:100;
+  /* right:0; bottom:0; 
+  margin:auto; */
+}
+
+.absolute {
+  position:absolute;
+  bottom:-50px; left:0;
+  /* top:0; right:0; */
+  /* margin:auto; */
+}
+
+.relative {
+  position: relative; 
+  top:150px; left:-400px;
+  z-index:-200;
+}
+
+.ex_wrap > ul {
+  position:relative;
+  top:200px; left:-50px;
+}
