@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {width: 100px; height: 200px; margin:5px; background-color: #dfa;}
+    p { width: 100%; height: 100px; border:1px solid #345; }
+    .other {border:5px solid #f00; box-sizing: border-box;}
+    .wrap {background-color: #fda;}
+
+    p,  .other {} /* 선택자 2개 */
+    p .other {}  /* div h1 {}  , div > h1 {} */
+    div.other.box.ther.etc {background-color:#dff;}
+
+  </style>
+</head>
+<body>
+<script>
+  function box2(){
+    console.log(1);
+    return false;
+  }
+
+  const box = {
+    the: {
+      etc:box2
+      },
+    the2 :console.log(3)
+    }
+
+  box.the.etc();
+  // box.the2;
+
+</script>
+
+  <ol>
+    <li><a href="#">link</a></li>
+    <li><a href="#"><span>link</span></a></li>
+    <li><span>link</span></li>
+    <li>link</li>
+  </ol>
+
+  <div class="wrap"></div>
+  <div class="other"></div>
+  <div class="etc"></div>
+  <p class="other">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ipsa iste facere voluptate ullam ab aspernatur est. Tempore, fugiat aliquam.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ipsa iste facere voluptate ullam ab aspernatur est. Tempore, fugiat aliquam.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ipsa iste facere voluptate ullam ab aspernatur est. Tempore, fugiat aliquam.</p>
+</body>
+</html>
