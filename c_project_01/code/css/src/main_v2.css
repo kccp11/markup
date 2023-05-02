@@ -211,15 +211,17 @@
   float: left;
   width: 30px; height: 30px;
   margin-left: 25px;
-  background-color: #0cc;
 }
 .area_indicator li:first-child {margin-left: 0;}
 
-.area_indicator {background-image: url("../../img/main_page/ind_btn.png");}
-.area_indicator li:nth-child(1) {background-position: ;}
-.area_indicator li:nth-child(2) {background-position: ;}
-.area_indicator li:nth-child(3.
-) {background-position: ;}
+.area_indicator a {
+  width: 30px; height: 30px;
+  background-image: url("../../img/main_page/ind_btn.png");
+  background-repeat: no-repeat;
+}
+.area_indicator li:nth-child(1) a {background-position: -46px -56px;}
+.area_indicator li:nth-child(2) a {background-position: -2px -56px;}
+.area_indicator li:nth-child(3) a {background-position: -2px -56px;}
 
 .area_content { width: 940px; height: 370px;
   margin: 48px auto 0;

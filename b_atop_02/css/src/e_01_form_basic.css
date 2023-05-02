@@ -1,0 +1,14 @@
+/*/e_01_form_basic.css*/
+form {
+  width: 40%; height: auto; min-height: 200px; background-color: #fff;
+}
+
+button {
+  padding: 0.3rem 2rem;
+  border: 1px solid #fff;
+  background-color: #adf;
+}
+.select_lidt ol,
+.select_lidt ul{
+  float: left;
+}

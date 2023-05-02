@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--e_02_form_type_attr.html-->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../font/fontawesome/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/common/resrt.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/e_02_form_type_attr.css">
+
+  <link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="shortcut icon" href="../favicom.png" type="image/png">
+  <title>e_02_form_type_attr</title>
+</head>
+<body>
+  <!--layout-->
+    <div class="code_exam">
+      <h1><a href="../html/a_content.html">웹표준</a></h1>
+      <hr>
+      <div class="part">
+        <h2>사용할 기능</h2>
+        <div class="ex_wrap">
+          <form action="#" method="POST">
+
+            <fieldset>
+              <legend>내용을 입력</legend>
+              <div>
+                <label for="usrId" class="usr_id">사용자 ID 입력</label> :  
+                <input type="text" id="usrId" name="usrId" value="" class="input_text"
+                        placeholder="사용할 ID를 입력하세요" maxlength="12" required>
+              </div><!--placeholder(input안에들어가있는 임시예제)-->
+              <div>
+                <label for="usrPw">비밀번호 입력</label> : 
+                <input type="password" id="usrPw" name="usrPw" value=""
+                       placeholder="비밀번호를 입력하세요" maxlength="12" required>
+              </div><!--maxlength(최대글자수)-->
+              <hr>
+              <div>
+                <label for="usrTel">전화번호를 입력</label> : 
+                <input type="tel" id="usrTel" name="usrTel" value="" class="input_text"
+                     placeholder="전화번호를 입력하세요" maxlength="11">
+              </div><!--maxlength(최대글자수)-->
+              <div>
+              <label for="usrMail">이메일을 입력</label> : 
+              <input type="email" id="usrMail" name="usrMail" value=""  class="input_text" 
+                     placeholder="exam@wxam.com" required>
+              </div>
+              <div>
+              <label for="usrUrl">url 입력</label> : 
+              <input type="url" id="usrUrl" name="usrUrl" value=""  class="input_text" 
+                     placeholder="http://naver.com" required>
+              </div>
+            </fieldset><!--내용을 입력--><!--placeholder(input안에들어가있는 임시예제)-->
+
+            <fieldset>
+              <legend>체크항목1</legend>
+              <p>가고 싶은 여행지 1가지만 선택하시오.</p>
+              <div>
+                <input type="radio" id="select_01" name="tour" value="제주도" checked>
+                <label for="select_01">제주도</label>
+              </div>
+              <div>
+                <input type="radio" id="select_02" name="tour" value="괌">
+                <label for="select_02">괌</label>
+              </div>
+              <div>
+                <input type="radio" id="select_03" name="tour" value="파리">
+                <label for="select_02">파리</label>
+              </div>
+            </fieldset><!--checked 선택되어있는 상태--><!--radio-->
+
+            <fieldset>
+              <legend>체크항목2</legend>
+              <p>저녁에 먹고 싶은 음식을 모두 고르시오.</p>
+              <div>
+                <input type="checkbox" id="check_01" name="food" value="족발">
+                <label for="check_01">족발</label>
+              </div>
+              <div>
+                <input type="checkbox" id="check_02" name="food" value="치킨">
+                <label for="check_02">치킨</label>
+              </div>
+              <div>
+                <input type="checkbox" id="check_03" name="food" value="보쌈">
+                <label for="check_03">보쌈</label>
+              </div>
+            </fieldset><!--check-->
+
+            <fieldset>
+              <legend>복합용</legend>
+              <div>
+                <label for="multiText" class="blind">전달할 내용</label>
+                <textarea name="multiText" id="multiText" cols="30" rows="10"></textarea>
+              </div>
+
+              <div>
+                <label for="drink">음료수를 고르세요.</label>
+                <select name="drink" id="drink" multiple>
+                  <option>선택하세요</option>
+                  <optgroup label="커피류">
+                  <option value="espresso">에스프레소</option>
+                  <option value="americano">아메리카노</option>
+                  <option value="latte">카페라떼</option>
+                  <option value="mocha">에스프레소</option>
+                  </optgroup>
+                  <optgroup label="주스류">
+                  <option value="orange">오렌지주스</option>
+                  <option value="apple">사과주스</option>
+                  <option value="banana">바나나주스</option>
+                  </optgroup>
+                </select>
+              </div>
+              
+              <div>
+                <button type="submit">확인</button>
+                <button type="reset">취소</button>
+                <button type="button">찾기</button>
+              </div>
+            </fieldset><!--select(css에서 적용이 되는 요소와 안되는 요소가 있다)
+                          multiple(여러개 선택을 할수있게한다)-->
+
+            <fieldset>
+              <legend>기타</legend>
+              <div>
+                보이지않지만 자룔르 가지고 보낼 수 있도록 처리하는 기능
+                <input type="hidden" name="hdn" id="hdn" value="..." >
+              </div>
+              <div>
+                <label for="color">사용할 색상 선택</label>
+                <input type="color" name="color" id="color" value="">
+              </div>
+              <div>
+                <label for="count">갯수선택</label>
+                <input type="number" name="count" id="count" min="0" max="10" step="2" value="1">
+              </div>
+              <div>
+                <label for="count_02">갯수선택</label>
+                <input type="range" name="count_02" id="count_02" min="0" max="10" step="1" value="1">
+              </div>
+            </fieldset><!--type="number" || min(최소값) max(최대값) step(변동값) value(초기값)-->
+            <!-- =============================== -->
+            <fieldset>
+              <legend>확인용</legend>
+              <input type="submit" value="확인">
+              <input type="reset" value="취소">
+              <input type="image" src="../icon/icon/001-restaurant.png" alt="위치안내" class="img_btn">
+              <input type="button" value="번호전송" >
+              <input type="file" accept=".jpg,.png,.pdf,.ai,.html,.css,.js">
+            </fieldset>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  <!--javascript-->
+</body>
+</html>

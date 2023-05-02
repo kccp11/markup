@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--d_01_audio.html-->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../font/fontawesome/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/common/resrt.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/d_01_audio.css">
+
+  <link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <title>d_01_audio</title>
+</head>
+<body>
+  <!--layout-->
+  <div class="code_exam">
+    <h1><a href="./a_conrent.html">웹표준</a></h1>
+    <hr />
+    <div class="part">
+      <h2>ausio 사용하기</h2>
+      <div class="ex_wrap">
+        <!-- <audio src="../mult/audio/065221_amen-break-b-160-bpm-85027.mp3" controls></audio> -->
+        <audio controls preload><!--controls(재생을위한 컨트롤러)preload(재생전 미리 다운로드해서 재생속도를 올림)-->
+          <source src="../mult/audio/065221_amen-break-b-160-bpm-85027.ogg" type="audio/ogg" />
+          <source src="../mult/audio/065221_amen-break-b-160-bpm-85027.mp3" type="audio/mp3" />
+          <p>현재 사용중인 브라우저는 사운드가 재생되지 않는 기능을 가지고 있습니다.<br />
+            <a href="http://google.com/chrome">최신브라우저</a>를 설치하시고 사용해 주시기 바랍니다.</p>
+          </audio>
+<!--           <button type="button">play</button>
+          <button type="button">pause</button> 버튼을 따로 만드는 경우-->
+      </div>
+    </div>
+  </div>
+  <!--javascript-->
+</body>
+</html>
