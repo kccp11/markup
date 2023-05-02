@@ -34,5 +34,11 @@ table {border-collapse: collapse; border-spacing: 0;}
 
 abbr {text-decoration: none;}
 
+address { font-style:normal; }
+
+.to_upper {
+  text-transform: uppercase;
+}
+
 header,article,section,footer,nav,aside,figure,figcaption,main { 
   display: block; margin: 0; padding:0; border: 0;}

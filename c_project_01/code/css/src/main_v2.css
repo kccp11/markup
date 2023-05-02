@@ -215,6 +215,12 @@
 }
 .area_indicator li:first-child {margin-left: 0;}
 
+.area_indicator {background-image: url("../../img/main_page/ind_btn.png");}
+.area_indicator li:nth-child(1) {background-position: ;}
+.area_indicator li:nth-child(2) {background-position: ;}
+.area_indicator li:nth-child(3.
+) {background-position: ;}
+
 .area_content { width: 940px; height: 370px;
   margin: 48px auto 0;
   /* margin: auto; margin-top: 48px; margin-bottom: 50px; 
@@ -235,49 +241,197 @@
 /*subBox*/
 #subBox {
   position: relative;
-  width: 100%; height: 350px; /*padding-top: 150px; box-sizing: border-box;*/ background-color: #aaa;}
+  width: 100%; height: 350px; /* padding-top: 150px; box-sizing: border-box; */ background-color: #ffbd55;}
 
 #subBox > .area { 
   position: absolute; bottom: 0; left: 0; right: 0;
   height: 300px; margin: auto;
-  background-color: #ddd;}
+  /* background-color: #ddd; */}
 
-  .subBox_area {
-    float: right;
-    width: 400px; height: 200px;
-    margin-top: 52px; margin-right: 70px;
-    background-color: #0cc;
-  }
+.subBox_area {
+  float: right;
+  width: 400px; height: 200px;
+  margin-top: 52px; margin-right: 70px;
+  /* background-color: #0cc */;
+}
+.subBox_area h2 {
+  width: 100%; height: 58px;
+  font-size: 40px; font-weight: 700;
+  line-height: 58px; color: #171717;
+  text-transform: capitalize;
+}
+.subBox_area p {
+  width: 100%; height: 79px;
+  font-size: 18px; color: #171717;
+  line-height: 150%;
+}
+.subBox_area_link a{ display: inline-block; width: 100%; height: 100%;}
 
-  .subBox_area_img {
-    float: left;
-    width: 460px; height: 300px; 
-    background-color: #0cc;
-  }
+.subBox_area_link a:nth-child(1) {
+  margin-right: 30px; margin-top: 11px;
+  width: 160px; height: 45px;
+  line-height: 45px;
+  font-size: 22px; text-align: center;
+  color: #fff;
+  background-color: #1a5d54;
+}
+.subBox_area_link a:nth-child(2) {
+  width: 110px; height: 45px;
+  font-size: 22px; text-align: center;
+  line-height: 45px;
+  outline: 1px solid #1a5d54;
+  color: #1a5d54;
+  background-color: #fff;
+}
+
+.subBox_area_img {
+  float: left;
+  width: 460px; height: 300px; 
+  background-color: #0cc;
+}
+.subBox_area_set {
+  width: 100%; height: 100%;
+  background-image: url(../../img/main_page/sub_banner_image.png);
+  background-repeat: no-repeat; background-position: 50% 50%;
+  background-size: cover;
+}
 
 /*bestBox*/
 #bestBox {
-  width: 100%; height: 700px; padding-top: 175px; box-sizing: border-box; background-color: #eee;}
+  width: 100%; height: 700px; padding-top: 175px; box-sizing: border-box; background-color: #fff;}
 
-#bestBox > .area { height: 380px; background-color: #ccc;}
+#bestBox > .area { height: 380px; background-color: #fff;}
+
+.slide_btn {
+  position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;
+  width: 100%; min-width: 940px; max-width: 1440px; height: 0;
+}
 
 .best_area {
   float: left;
  width: 230px; height: 380px;
-  background-color: #fa0;
 }
-.best_card_lidt {
+
+.best_area h2 { 
+  width: 100%; height: 123px;
+  font-size: 40px; font-weight: 700;
+  line-height: 150%; color: #171717;
+  text-transform: capitalize;
+  }
+.best_area p {
+  width: 100%; height: 82px;
+  font-size: 16px; color: #171717;
+  line-height: 150%;
+}
+
+.best_next_prev button { 
+  width: 100px; height: 30px;
+  background-image: url(../../img/main_page/best_next_prev.png);
+  background-repeat: no-repeat;
+  }
+
+.best_next_prev button:hover {background-color: #0cc;}
+.best_next_prev button:focus {outline: 2px solid #333;}
+
+.best_next_prev .best_next{ margin-right: 6px; background-position:-2px -2px; }
+.best_next_prev .best_prev{ background-position: -102px -2px; }
+
+/*.best_Box_link----------------*/
+.best_area .best_Box_link {
+  width: 209px; height: 55px;
+}
+
+.best_Box_link a {
+  display: block;
+  width: 100%; height: 100%;
+  padding: 0 18px; box-sizing: border-box;
+  text-align: center;
+  line-height: 55px;
+  color: #fff;
+  font-size: 22px; font-size: 1.375rem; font-weight: 700;
+  background-color: #1a5d54;
+}
+.best_Box_link i { margin: auto; margin-top: 15px;}
+
+.best_Box_link a:hover {text-decoration: underline;}
+.best_Box_link a:focus {outline: 2px solid #ffbd55;}
+
+
+
+/*.best_card_list li------------------*/
+.best_card_list {
   float: right;
   width: 800px; height: 380px;
   background-color: #fff;
 }
-.best_card_lidt ul { width: 100%; height: 100%;}
-.best_card_lidt li { 
+.best_card_list ul { width: 100%; height: 100%;}
+.best_card_list li { 
   float: left;
   width: 240px; height: 380px;
   margin-left: 40px;
-  background-color: #0cc;
+  outline: 1px solid #171717
+ /*  background-color: #0cc */;
 }
+
+.best_card_list li a {
+  display: block;
+  width: 240px; height: 380px;
+  margin: auto;
+  padding:10px; box-sizing: border-box;
+}
+
+.img_set {
+  width: 100%; height:180px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+
+
+
+ 
+/* 
+.best_card_list li a::before {
+  content: ""; display: block;
+  width: 100%; height:200px;
+  background-repeat: no-repeat; background-position: 50% 0;
+}
+*/
+
+.best_card_list li:nth-child(1) .img_set {
+  background-image: url(../../img/main_page/best_img_01.png); 
+}
+
+.best_card_list li:nth-child(2) .img_set {
+  background-image: url(../../img/main_page/best_img_02.png); 
+}
+
+.best_card_list li:nth-child(3) .img_set {
+  background-image: url(../../img/main_page/best_img_03.png); 
+} 
+
+.img_narr {
+  width: 100%; height: 180px;
+  margin-top: 10px;
+}
+
+.img_narr h3 {
+  width: 100%; height: 30px;
+  font-size: 1.375rem; font-weight: 700;
+  line-height: 30px;
+  color: #171717;
+  text-transform: capitalize;
+}
+.img_narr p{
+  width: 100%; height: 76px;
+  font-size: 1rem; color: #171717;
+  border-bottom: 1px solid #171717;
+}
+.img_narr div{
+  width: 100%; height: 16px;
+  font-size: 1rem; color: #171717;
+}
+
 
 /*galleryBox*/
 .area_content_02 { width: 940px; height: 370px;
@@ -319,7 +473,7 @@
 
 /*spondorBox*/
 #spondorBox {
-  width: 100%; height: 100px;  padding: 10px; box-sizing:border-box; background-color: #999;}
+  width: 100%; height: 100px;  padding: 10px; box-sizing:border-box;/*  background-color: #999; */}
 
 .sponsor_area ul { 
   width: 940px; height: 80px; 
@@ -332,7 +486,7 @@
   width: 140px; height: 80px;
   margin: auto;
   margin-left: 20px;
-  background-color: #0cc;
+  /* background-color: #0cc; */
   background-image: url(../../img/main_page/sponsor.png);
   background-repeat: no-repeat;
 
@@ -362,15 +516,130 @@
 #spondorBox > .area_foot{height: auto; background-color: #eee;}
 
 
-.info_company_01 { width: 550px; height: 200px; background-color: #0cc;}
+.info_company_01 { width: 550px; height: 200px;/*  background-color: #0cc; */}
+.info_company_01 ul {
+  width:100%; height:auto; 
+  padding: 4px 5px; box-sizing: border-box;
+}
+
 
 .info_company_01 li {
   float: left;
   width: auto; height: 17px;
-  margin: 0;
-  padding: 10px; box-sizing: border-box;
+  margin-left: 14px;
 }
 
+.info_company_01 li a {
+  display: block;
+  width: 100%; height: 100%;
+  text-align: center;
+  line-height: 17px;
+  font-size: 0.75rem; color: #171717;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+/*tel------------------------------------*/
+.info_company_01 address p { width: auto;height: auto; margin-top: 10px;} 
+
+
+.tel_fax {
+  width: auto; height: auto;
+}
+
+.tel_fax dl{
+  float: left;
+  width: auto; height: auto;
+}
+
+.tel_fax dt, 
+.tel_fax dd  {
+/*   display: inline-block; */
+  float: left;
+  width: auto; height: auto;
+  margin-right:10px;
+}
+
+.tel_fax dt:after {
+  content:":"; display:inline-block; 
+  margin:0 5px;
+}
+
+.tel_fax dd:after{
+  content:"|"; display:inline-block;  
+  margin-left:10px;
+  color:#777;
+}
+
+.tel_fax dl:last-of-type dd:after {
+  display: none;
+}
+
+/*사업자 등록 통신판매 대표이사*/
+
+.business_number {
+  width: auto; height: auto;
+}
+
+.business_number dl{
+  float: left;
+  width: auto; height: auto;
+}
+
+.business_number dt, 
+.business_number dd  {
+/*   display: inline-block; */
+  float: left;
+  width: auto; height: auto;
+  margin-right:10px;
+}
+
+.business_number dt:after {
+  content:":"; display:inline-block; 
+  margin:0 5px;
+}
+
+.business_number dd:after{
+  content:"|"; display:inline-block;  
+  margin-left:10px;
+  color:#777;
+}
+
+.business_number dl:last-of-type dd:after {
+  display: none;
+}
+
+/*대표이사----------------*/
+.ceo {
+  width: auto; height: auto;
+}
+
+.ceo dl{
+  float: left;
+  width: auto; height: auto;
+}
+
+.ceo dt, 
+.ceo dd  {
+/*   display: inline-block; */
+  float: left;
+  width: auto; height: auto;
+  margin-right:10px;
+}
+
+.ceo dt:after {
+  content:":"; display:inline-block; 
+  margin:0 5px;
+}
+
+.ceo dd:after{
+  content:"|"; display:inline-block;  
+  margin-left:10px;
+  color:#777;
+}
+
+.ceo dl:last-of-type dd:after {
+  display: none;
+}
 
 .area_foot >.info_company_02 {
   float: right; margin-top: -160px;
@@ -392,12 +661,12 @@
 .info_company_02 li:nth-child(3) a {background-image: url(../../img/footBOx/Group\ 34.png);}
 
 .famliy_silte_01 {
-  display: block; 
+  
   width: 160px; height: 30px; 
   margin-top: 48px;
   background-color: #fff;}
 .famliy_silte_02{
-  display: block; width: 160px; height: 50px;
+  width: 160px; height: 50px;
   margin-top: 10px;
   background-color: #fff;}
 
