@@ -1,0 +1,9 @@
+/*g_03_rwd.css*/
+/*1280px 브라우저 크기 기준
+  브라우저가  1280보다 큰 사이즈 이면 (이상) - 배경색 #ddd
+  브라우저가  1280보다 미만 사이즈 이면 - 배경색 #faa
+*/
+@import url("../rwd/a_old_devioe.css");
+@import url("../rwd/b_smartphone.css");
+@import url("../rwd/c_table.css");
+@import url("../rwd/d_laptop.css");

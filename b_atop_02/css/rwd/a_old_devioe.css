@@ -1,0 +1,28 @@
+/*a_old_devioe.css*/
+ /*size/기준 * 100 => ?vw*/
+#wrap {
+  width: 100%; min-width: 960px; height: auto;
+  margin: auto;
+  background-color: #acf;
+}
+
+#headBox{
+  width: 100%; height: 80px;
+  background-color: #cacaca;} 
+
+#viewBox{
+  width: 100%; height: 500px; 
+  background-color: #fc7676;}
+
+#contentBox{
+  width: 100%; height: 600px; max-width: 1280px; 
+  margin: auto; 
+  background-color: #bcf88d;}
+
+#supportBox{
+  widows: 100%; max-width: 1280px; height: 300px; 
+  margin: auto; background-color: #5196ff;}
+
+#footBox{
+  width: 100%; height: 120px;
+   background-color: #cacaca;}

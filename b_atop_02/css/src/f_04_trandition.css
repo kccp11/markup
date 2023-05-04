@@ -1,0 +1,91 @@
+/*f_04_trandition.css*/
+
+.width_bar > li {
+  width: 100px; height: 150px; background-color: #afc; color: #fff;
+}
+
+.width_bar:hover >li:nth-child(1){
+  width: 700px;
+  transition-property: width;
+  transition-duration: 1000ms;
+  transition-timing-function:ease;
+  transition-delay: 400ms;
+}/*linear(일정시간동안) ease(자연스럽게) ease-in(점점빠르게) ease-in-out(빨랐다가 느렸다가) ease-out(점점느리게)*/
+
+.width_bar:hover > li:nth-child(2) {
+  width: 1000px; background-color: #044;
+  transition-property: all;
+  transition-duration:500ms;
+  transition-duration:1000ms;
+  transition-timing-function:linear; 
+}
+
+.width_bar:hover > li:nth-child(3) {
+  width: 500px; height: 200px;
+  transition: all 1000ms linear;
+}
+
+.width_bar:hover >li:nth-child(4) {
+  border-radius: 50px;
+  transition:all 1500ms ease-in;
+}
+.width_bar li:nth-child(5) {  transition:all 2000ms ease;}
+.width_bar:hover > li:nth-child(5) {
+  width: 500px; height: 500px; background-color: #fa0;
+  border-radius: 100%;
+}
+
+/*======================*/
+.card li {
+  float: left;
+ width: 250px; height: 400px;
+ margin: 20px;
+ color: #fff; font-size: 1.25rem;
+ background-color: #0ac;
+}
+
+.card a {
+  position: relative;
+  display: block; width: 100%; height: 100%;
+  padding: 20px; box-sizing: border-box;
+  color: inherit; border-radius: 5px;
+  overflow: hidden;
+  background-image: url(../../icon/back/unsplash_VkuRDf0lm5c.png);
+  background-repeat: no-repeat; 
+  background-position: 50% 50%;
+  background-size: auto 100%;
+}
+
+.card li:nth-child(1) a:hover {
+  background-size: auto 200%;
+  transition:all 500ms ease;
+}
+
+.card li:nth-child(2) a:hover {
+  transform:scale(1.2);
+  transition:all 500ms ease;
+}
+
+.card li:nth-child(3) a:hover{
+  background-size: auto 200%;
+  transform:scale(1.2); rotate: (15deg);
+  transition:all 500ms ease;
+}
+.card li:nth-child(4) a::after{
+  content: ""; display: block; 
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(30,30,30, 0.5);
+  transition:all 500ms ease;
+}
+.caed li:nth-child(4) a{
+  transition:all 500ms ease;
+}
+
+.card li:nth-child(4) a:hover {
+  transform:scale(1.2) rotate(5deg);
+  box-shadow: 5px 5px 5px  rgba(0,0,0,0.5);
+}
+.card li:nth-child(4) a:hover::after{
+  background-color: rgba(30,30,30, 0);
+}
