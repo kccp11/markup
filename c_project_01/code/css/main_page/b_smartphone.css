@@ -1,0 +1,140 @@
+/*b_smartphone.css*/
+
+/*smartphone*/
+@media screen and (max-width:599px){
+  /*기준디바이스 크기 :320px*/
+  /* body {background-color: var(--primary_01);} */
+
+  /* #wrap {} */
+
+  /*headBox--------------------*/
+  #headBox {height: 3.125rem;}
+  .area_head {height: 100%;}
+
+  #logo {
+    float: none;
+    position: absolute; top: 0.5rem; left: 50%; 
+    width:3.75rem;height: 2.1875rem;
+    transform: translateX(-50%);
+  }
+
+  .nav_btn{display: block; position: relative; z-index: 100; width: 2.1875rem;height: 2.1875rem; }
+
+  #navBox {
+    display: none;
+    position: absolute; top: 0; left: 0;  z-index: 10;
+    padding:0.5rem 1.875rem; box-sizing: border-box;
+    width: 100%; height: 100vh;
+    /* background-color: rgba(26,93,84,0.7); */
+    background-image: url(../../img/headBox/navBox/smartophone_nav_origin.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+  }
+  #navBox::before{
+    content: ""; display: block; 
+    position: absolute; top: 0; left: 0; z-index: -1;
+    width: 100%; height: 100%;
+    background-color: rgba(26,93,84,1);
+    opacity: 0.85;
+  }
+
+  #navBox h2 {
+    position: relative; z-index: 100;
+    widows: 3.75rem; height: 2.1875rem;
+    margin: auto; margin-bottom: 1.875rem;
+    background-image: url(../../img/headBox/navBox/logo_white.png);
+    background-image: url(../../img/headBox/navBox/logo_white.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  } 
+  .unb, .gnb {float: none; width: 100%; min-width: auto;  height: auto;}
+  .unb {width: 80%; margin: auto;margin-bottom: 1rem; border-bottom: 0.0625rem solid #fff;}
+  .unb li{
+    float: left; width: calc(50% - 0.625rem); height: auto; 
+    margin: 0; margin-bottom: 0.625rem;
+  }
+  .unb li:nth-child(1) { float: left;}
+  .unb li:nth-child(2n) { float:right;}
+  .unb a {height: 1.875rem;line-height: 1.875rem;
+     font-size: 1rem;}
+
+  .gnb ul {float:none; width: 100%; height: auto;}
+  .gnb li{
+    float:none; width: 100%; height: 3.125rem;
+    margin-bottom: 0.9375rem; padding: 0;
+    }
+
+ 
+  .unb a { color: #fff;}
+  .gnb a {
+    display: block; width: 100%; height: 100%; 
+    line-height: 2.5rem; color: #fff;
+    padding: 0; border: 0.0625rem solid #fff;
+    border-radius: 0.3125rem;
+    font-size: 1.125rem; font-weight: 400;
+  }
+
+  /*slideBox--------------------*/
+
+  #slideBox { 
+    min-height: 31.25rem;
+    padding-top: 3.125rem;
+  }
+    
+  /*newBox--------------------*/
+  #newBox {
+    height: 100vh; min-height: 37.5rem; max-height: 37.5rem;
+    padding-top: 5rem; padding-bottom: 5.625rem;}
+
+  .area_title {
+    width: 100%; height: auto; 
+    text-align: center;
+    font-size: 1.75rem;
+     }
+
+  .newBox_area {width: 50.875rem; height: 20rem;} 
+
+  .newBox_area li {width: 16.25rem; margin-left: 1.0625rem;}
+  /*subBox--------------------*/
+  #subBox { height: 100vh; min-height: 500px; background-color: #fff;}
+  #subBox > .area {width: 100%; min-width: auto; height: 100%;}
+
+  .subBox_area { z-index: 100; left: 50%;bottom: 25%; width: 90%;transform: translateX(-50%);}
+  .subBox_area p {min-height: 5rem; margin-bottom: 2.1875rem;}
+  .subBox_area_link{height: auto;}
+  #subBox .subBox_area_link a{display: block; float: none; margin-bottom: 0.875rem;}
+  .subBox_area_link a:nth-child(1){width: 100%; height: 3.75rem; line-height: 3.75rem; font-weight: 700;}
+  .subBox_area_link a:nth-child(2){width: 100%; height: 2.8125rem;}
+
+  .subBox_area_img {
+    width: 100%; height: 100%;
+    background-image: url(../../img/main_page/mobile/e_subBox/sub_img.png);
+    opacity: 0.3;
+  }
+  
+  /*bestBox==============================*/
+  #bestBox {
+    height: auto; min-height: 43.75rem;
+    padding: 2.5rem; padding-bottom: 8.75rem;}
+
+  /*galleryBox==============================*/
+    #galleryBox {
+      height: auto; min-height: 56.25rem;
+      padding-top: 1.5rem; padding-bottom: 8.75rem;}
+
+  /*spondorBox==============================*/
+  #spondorBox {
+  height: 25rem;}
+
+  /*footBox==============================*/
+
+  #footBox > {height: 28.125rem;} 
+  #footBox > * {display: none;} 
+}
+  /*@media screen and (max-width:599px)*/
+  
+
+
+
