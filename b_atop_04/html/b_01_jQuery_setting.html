@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery 내용 설치방법</title>
+
+</head>
+<body>
+  <div id="wtap">
+    <h1><a href="./a_content.html">jQuery</a></h1>
+    <ul class="ul_wrap">
+      <li></li>
+      <li></li>
+      <li></li>
+  </ul>
+  </div>
+
+
+  <!--script-->
+  <script src="../js/common/jquery-3.6.4.min.js"></script>
+  <script src="../js/common/jquery-ui.min.js"></script>
+  <script>
+    //javacript
+    var wrap = document.getElementById('wrap');
+    var h1 = document.getElementsByTagName("h1")[0];
+    var ul = document.getElementsByClassName('ul_wrap')[0];
+    var li = ul.getElementsByTagName('li');
+
+    li.forEach(function(data,idx){
+      data.addEventLister('click',function(){
+
+      });
+    });
+  </script>
+  <script>
+    //$(document).ready(function(){/* 코드 */});
+    (function ($){
+      //jQuery
+      condole.log($.fn);//버전체크
+      var wrap2  = $('#wrap');
+      var hTitle = $('h1');
+      var ulWrap = $('.ul_wrap');
+      var list    = ulWrap.childern('li');
+      list.on('click', function(){
+        //
+      })
+    })(jQuery);
+  </script>
+</body>
+</html>
