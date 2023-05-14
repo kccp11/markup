@@ -1,0 +1,24 @@
+/*b_01_slide_structor*/
+
+.code_exam{
+  width: 1300px;
+}
+
+.slide {
+  width: 800px; height: 450px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.horizontal_slide { width: 500%; height: 100%;}
+.horizontal_slide > div { float: left; width: 800px; height: 450px;}
+
+.position_slide { position: relative; width: 100%; height: 100%;}
+.position_slide > div { display: none; position: absolute; top: 0; left: 0; width: 100%; height: 450px;}
+.position_slide >div.action {display: block; z-index: 100;}
+
+.slide_con_01 { width: 800px; height: 450px; background-color: #12B27077;}
+.slide_con_02 { width: 800px; height: 450px; background-color: #30106677;}
+.slide_con_03 { width: 800px; height: 450px; background-color: #55AA8677;}
+.slide_con_04 { width: 800px; height: 450px; background-color: #185B8A77;}
+.slide_con_05 { width: 800px; height: 450px; background-color: #1DD56077;}

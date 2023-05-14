@@ -1,0 +1,50 @@
+[
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에대한 설명",
+    "title" : "title_01",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_deatail/coffee_01.html"},
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에대한 설명",
+    "title" : "title_02",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_deatail/coffee_02.html"},
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에대한 설명",
+    "title" : "title_03",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_deatail/coffee_03.html"},
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에대한 설명",
+    "title" : "title_04",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_deatail/coffee_04.html"},
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에대한 설명",
+    "title" : "title_05",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_deatail/coffee_05.html"},
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에대한 설명",
+    "title" : "title_06",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_deatail/coffee_06.html"},
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에대한 설명",
+    "title" : "title_07",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_deatail/coffee_07.html"},
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에대한 설명",
+    "title" : "title_08",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_deatail/coffee_08.html"}
+]
