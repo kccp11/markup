@@ -16,6 +16,7 @@ jsonData.done(function(data){
   var dataLen = slideData.length;
   var viewBox =$('#viewBox');
   var viewCover;
+  var setNum = 0;
 
   //기능구현1
   var slideWrapperSet = '<div class="slide"><div class="slide_wrapper"></div></div>'
@@ -29,7 +30,7 @@ jsonData.done(function(data){
   var slideBtn =function(){
     var inedrtBtn ='<div class="slide_btn  blind_area"><button type="button" class="next"><span>다음내용보기</span><i class="fa-solid fa-arrow-right"></i></button><button type="button" class="prev"><span>이전내용보기</span><i class="fa-solid fa-arrow-left"></i></button></div>'
     slideWrapperCode.before(inedrtBtn);
-  }
+  }//slideBtn
   
   var slideDivSetFn = function(n){
     slideWrapperCode.append(slideDivSet);
@@ -45,6 +46,8 @@ jsonData.done(function(data){
     var divImg = slideDiv.find('.slide_img_part');
     var imgCaption = divImg.find('figcaption');
     var imgContent = divImg.find('p')
+    
+
     //기능
     slideDiv.css({backgroundImage:'url('+imgUrl+slideN.background+')'})
     slideDiv.addClass(slideN.description);
@@ -54,17 +57,18 @@ jsonData.done(function(data){
     divImg.css({backgroundImage:'url('+imgUrl+slideN.image+')'});
     imgCaption.text(slideN.description);
     imgContent.text(slideN.summary);
-};
+};//slideDivSetFn
+
 var actionFn = function(i){
   viewCover = $('.view_cover');
   viewCover.eq(i).addClass('action');
-}
+}//actionFn
   var i = 0;
   for(;i < dataLen; i+=1){
     slideDivSetFn(i);
 
   }
-  actionFn(0);
+  actionFn(setNum);
   slideBtn();
 
   //===========================================================
@@ -75,20 +79,36 @@ var actionFn = function(i){
   //해당하는 순서에맞는 인디케이터에 action을 설정하여 인지할 수 있도록 하자
 
   //변수 선언 담을 코드작성
-  var indiWrapper = '<div class="slide_check_part"><ul class="slide_indicator blind_area"></ul><p><em></em><span></span></p></div>'
+  var indiWrapper =  '<div class="slide_check_part">\
+                      <ul class="slide_indicator blind_area"></ul>\
+                      <p><em class="now_view"></em> / <span class="total_view"></span></p>\
+                      </div>'
   var indiCode = '<li><a href="#" data-href="#"><span></span></a></li>'
   
-  //기능설정1
+  //기능설정1 + 변수
   slideWrapperCode.before(indiWrapper);
+  var slideCheckPart = viewBox.find('.slide_check_part')
   var indiWrapperSelector = viewBox.find('.slide_indicator')
-  
+  var indiSelector;
+
   //함수
   var indicatorSetFn =function(n){
     indiWrapperSelector.append(indiCode);
-    var indiSelector = indiWrapperSelector.find('li')
-    indiSelector.eq(n).find('span').text(slideData[n].summary);
-    indiSelector.eq(n).find('a').attr({'data-href':'.' + slideData[n].description});
-  }
+
+    indiSelector = indiWrapperSelector.find('li')
+    var indiLiLink = indiSelector.eq(n).find('a')
+    var indiLiSpan = indiLiLink.children('span')
+
+    indiLiLink.attr({'data-href':'.' + slideData[n].description});
+    indiLiSpan.text(slideData[n].summary);
+}//indicatorSetFn
+
+  var indicatorcheckFn = function(n){
+    var viewLenCkNow = slideCheckPart.find('.now_view')
+    var viewLenCkToral = slideCheckPart.find('.total_view')
+    viewLenCkNow.text(n+1);
+    viewLenCkToral.text(dataLen);
+  }//indicatorcheckFn
 
   //indictor 생성
   var j = 0 ;
@@ -96,7 +116,15 @@ var actionFn = function(i){
     indicatorSetFn(j);
     
   }
+  indicatorcheckFn(setNum);
+  indiSelector.eq(setNum).addClass('action')
 
+  //슬라이드광고, indiselector, 체크번호 모드 동시에 처리해야하는 기능으로 한번에 수행하도록 한다
+  var acrionNumSetFn = function(n){
+    actionFn(n);
+    indicatorcheckFn(n);
+    indiSelector.eq(n).addClass('action')
+  }
 })
 
 })(jQuery);
