@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "genre": "pubilc",
+    "title": "사이트 오픈행사",
+    "contents": "드디어 커피사러 커피샘플을사러 오삼을 드디어 오픈했습니다",
+    "summary": "웹페이지 오픈 축하기념행사 안내",
+    "link": "event_site_open.thml",
+    "image": "open_image.png",
+    "description": "open_image",
+    "image_use": "hidden",
+    "background": "nature_bg.png"
+  },
+  {
+    "id": 2,
+    "genre": "event",
+    "title": "merry christmas",
+    "contents": "12월 크리스마스를 맞이하여 연인 가족을 위한 카페 이벤트를 개최하엿습니다.",
+    "summary": "크리스마스 이벤트 행사",
+    "link": "event_christmas.html",
+    "image": "christmas_1st.png",
+    "description": "christmas_1st",
+    "image_use": "hidden",
+    "background": "christmas_bg.png"
+  },
+  {
+    "id": 3,
+    "genre": "news",
+    "title": "추운가울 따듯한 마음을 만들어줄 텀블러",
+    "contents": "누가보더라도 따뜻한 마음을 가질수 있는 텀블러를 출시하여 많은 분들꼐 전해드릴 상품을 소개합니다",
+    "summary": "텀블러 풀시 안내",
+    "link": "news_product_1st.html",
+    "image": "new_tumbler.png",
+    "description": "new_tumbler",
+    "image_use": "hidden",
+    "background": "light.bg.png"
+  },
+  {
+    "id": 4,
+    "genre": "news",
+    "title": "신년맞이 원두출시",
+    "contents": "새해맞이 새로운 원두가 출시되었습니다.",
+    "summary": "신상품 원두 소개",
+    "link": "news_coffeeBean_orange.html",
+    "image": "beans_orange.png",
+    "description": "beans_orange",
+    "image_use": "hidden",
+    "background": "beangs_bg.png"
+  }
+]

@@ -1,0 +1,36 @@
+
+
+
+
+.code_exam{ width: 1300px; height: 2000px;}
+.ex_wrap {position: relative;}
+h3 {text-align: center; margin-bottom: 20px;}
+/*=========================*/
+.slide {
+  --slide-len:5;
+  overflow: hidden;
+  width: 800px; height: 450px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.horizontal_slide { position: relative;/* left: -100%; */ width: 500%; width:calc(100% * var(--slide-len)); height: 100%;}
+.horizontal_slide > div { float: left; width: 20%; width:calc(100% / var(--slide-len)); height: 450px;}
+/*======================================================================================================*/
+
+
+.slide_btn{
+  position: absolute; top: 50%; left: 0; width: 100%; height: 00px;
+  padding: 0 30px; font-size: 8px; box-sizing: border-box;
+   background-color: #fff;}
+.slide_btn button { width: 40; height: 40px; background-color: #ccc; border-radius: 10px;}
+.next { float: right;}
+.prev {float: left;}
+
+/*======================================================================================================*/
+
+.slide_con_01 { width: 800px; height: 450px; background-color: #12B270;}
+.slide_con_02 { width: 800px; height: 450px; background-color: #301066;}
+.slide_con_03 { width: 800px; height: 450px; background-color: #55AA86;}
+.slide_con_04 { width: 800px; height: 450px; background-color: #185B8A;}
+.slide_con_05 { width: 800px; height: 450px; background-color: #1DD560;}/*b_05_slide_hofizontal_btn.css*/
