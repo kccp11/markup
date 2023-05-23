@@ -1,0 +1,102 @@
+/*mobiis_01.css*/
+
+#wrap{
+  width: 100%;height: 100%;
+  background-color: #eee;
+}
+.font_01{ width: 80%; font-size: 30px; margin: auto; margin-bottom: 30px; text-align: center;}
+.font_02{ width: 95%;margin: auto; line-height: 20px; font-size: 20px; text-align: center;}
+
+/*headerBox======================================================================*/
+#header_box{
+  width: 100%; height: 90px;
+  background-color: #180A54;}
+.header_icon{
+  width: 83px; height: 24px;
+  background-color: #85D3B5;}
+.head_tab{
+  width: 80%; height: 90px;
+  background-color: #49E808;}
+
+/*slideBox======================================================================*/
+  #slideBox{
+    width: 100%; height:700px;
+    background-color: #715439;
+  }
+
+
+/*introductionBox======================================================================*/
+#introductionBox{
+  width: 100%; height: 730px;
+  background-color: #000;
+}
+
+.introductionBox_area{
+
+  width: 100%; height: 200px;
+  padding: 50px 0;box-sizing: border-box;
+  background-color: #eee;
+}
+
+
+/*technologyBox======================================================================*/
+#technologyBox{
+  width: 100%; height: 970px;
+  background-color: #589AFE;
+}
+.technologyBox_area{
+
+  width: 100%; height: 200px;
+  padding: 50px 0;box-sizing: border-box;
+  background-color: #eee;
+}
+
+
+/*promotionBox======================================================================*/
+#promotionBox{
+  width: 100%; height: 720px;
+  background-color: #A410FA;
+}
+.promotionBox_area{
+
+  width: 100%; height: 250px;
+  padding: 50px 0;box-sizing: border-box;
+  background-color: #eee;
+}
+.promotionBox_area > a {
+  display: block;
+  width: 175px; height: 40px;
+  margin: auto;margin-top: 20px;
+  border: 1px solid #000;
+}
+.promotionBox_area > a > div {
+  width: 100%; height: 100%;
+  text-align: center;padding: 10px; box-sizing: border-box;
+}
+
+/*RecruitBox======================================================================*/
+#RecruitBox{
+  width: 100%; height: 740px;
+  background-color: #D2B4AE;
+}
+.RecruitBox_area{
+  width: 100%; height: 300px;
+  padding: 30px 0;box-sizing: border-box;
+  background-color: #eee;
+}
+
+
+/*footBox======================================================================*/
+#footBox{
+  width: 100%;height: 100px;
+  background-color: #B2A949;
+}
+#footBox > i {
+  position: fixed;bottom: 0;right: 0;
+  display: block;
+  width: 50px;height: 50px;
+}
+#footBox > div {
+  padding: 50px 0;
+  text-align: center;
+}

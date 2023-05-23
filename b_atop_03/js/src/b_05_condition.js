@@ -50,7 +50,6 @@ if(n >= 90){
 }
 console.log (nResult)
 
-console.clear()
 //=======================================================
 //switch
 
@@ -91,8 +90,7 @@ switch(i){
 
 }
 console.log(iResult)
-
-console.clear();
+;
 //======================
 //버튼을 클릭시-> 이벤트 발생)('click, function(){})
 //id= "old" value값으 찾아오기

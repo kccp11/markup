@@ -16,12 +16,12 @@
     exInnerText.text('li 첫번쨰 요소를 클릭하였습니다.')
   });
 
-  evtLi.eq(1).on('click',function(evt){
-    evt.preventDefault();
+  evtLi.eq(1).on('click',function(e){
+    e.preventDefault();
     exInnerText.text('li en번째 요소를 클릭하였습니다.')
   })
 //=================================================
-//dblclick: 더블클릭
+//dblclick: 더블클릭 
 evtLi.eq(2).on('dblclick',function(){
   exInnerText.text('dblclick')
 });

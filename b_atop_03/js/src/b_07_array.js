@@ -53,14 +53,13 @@ var ar1 = ['a','b','c','d','e','f','g','h','i'];
 //splice(순서,갯수,추가(갯수만큼)) :순서번쨰부터(포함),갯수만큼 삭제하고 추가로 삽입
 
 //ar1.splice(2);
-//ar1.splice(2,3);
+/* ar1.splice(2,3); */
 ar1.splice(2,3,'ㄱ','ㄴ','ㄷ','ㄹ');
 console.log(ar1);
-
 //=====================
 //기존배열.slice(시작,끝) :시작순서와 끝순서 사이의 값을 별도로 복제하여 가져오는것
 var ar2 = ar1.slice(2,6);
-console.log(ar1);
+console.log(ar2);
 
 //배열의 순서가 정해져있다
 //recerse() 배열의 순서를 뒤집는것
@@ -68,20 +67,19 @@ console.log(ar2);
 ar2.reverse();
 console.log(ar2);
 //sort 정렬
-console.clear();
 console.log(ar2);
 ar2.sort();
 console.log(ar2);
 
 var fruits = ['geape','apple','berry','kiwi','banana','orange'];
 console.log(fruits);
-fruits.sort(function(a,b){
-  return (a < b) ? -1 : 1; 
+fruits.sort(function(b,c){
+  return (b < c) ? -1 : 1; 
 });
-ar2.sort();
 console.log(fruits);
+ar2.sort();
 
-console.clear();
+console.clear()
 //===================
 //변수.split() : 변수의 내용을 기준(띄어쓰기,.,....)에 의해 배열로 설정
 var ls = '서울시 강남구 역삼동 000 16';
@@ -100,7 +98,7 @@ console.log(smtArr[3])
 
 var pNum = ['+82','010','000','1234'];
 console.log(pNum);
-var moblie = pNum.join(' - ');
+var moblie = pNum.join();
 console.log(moblie);
 
 console.log(pNum.length);

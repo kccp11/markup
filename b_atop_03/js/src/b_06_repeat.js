@@ -5,14 +5,13 @@
 
 
 
-for(var i = 0; i < 5 ; i+=1){
+for(var i = 0; i < 3 ; i+=1){
   console.log (i);
 }
 
-for (var j = 2023; j > 2000; j-=1){
+for (var j = 2023; j > 2020; j-=1){
   console.log(j)
 }
-console.clear();
 //=====================================================
 //이중 for문
 var k=2;
@@ -21,8 +20,7 @@ for (; k<=9; k+=1){
   for(l=1; l <=k; l+=1){
     console.log(k +'x' + l + '=' + k*l);
   }
-}
-console.clear();
+}console.clear();
 //===================================================
 //for-in : 정의를 위해 만든 객체를 위한 반복문
 var drink = {
@@ -51,7 +49,6 @@ console.log('teuits갯수',fruits.length);
 for(o-0; o<fruits.length; o+=1){
   console.log(fruits[0]);
 }
-console.clear();
 //======================
 //.ex-wrap      > getElementsByClassName('ex_wrap')[];
 //.ex_wrap > ul > getElementsByTagName('ul');
@@ -63,16 +60,16 @@ var exWrap = document.getElementsByClassName('ex_wrap')[0]
 //console.log(exWrap);
 var exUl = exWrap.getElementsByTagName('ul')[0];
 //console.log(exUl);
-/* 
+
 var makeLi= document.createElement('li');
 makeLi.innerText = fruits[0];
-exUl.append(makeLi); */
+exUl.append(makeLi);
 
-var makeLi;
+ var makeLi;
 var fruirsLength = fruits.length;
 var liLen = 0;
 
- for(; liLen < fruirsLength; liLen+1){
+ for(; liLen < fruirsLength; liLen+=1){
   makeLi= document.createElement('li');
   makeLi.innerText = fruits[liLen];
   exUl.append(makeLi);

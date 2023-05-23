@@ -2,7 +2,7 @@
 
 // 산술연산자  (=,-,*,/,%,+=,-=,*=,++,--)
 var n = 10;
-console.log(n, typeof(n));
+/* console.log(n, typeof(n));
 
 var plus = n+10;
 console.log (plus);
@@ -19,12 +19,11 @@ console.log (avg)
 var other = n%3;
 console.log(other)
 //%는 나누고 남는 나머지수
-
 var parI = parseInt(avg);
 console.log(parI);
 // 나누었을때 소수점을 제외한 수
 
-
+console.clear();
 var textNum = 1004+'px';
 var textPar = parseInt(textNum);
 console.log(textPar, typeof(textPar));
@@ -48,10 +47,9 @@ n /=50;
 console.log('n:',n); 
 
 n %=2;
-console.log('n:',n); 
-console.clear();
+console.log('n:',n);  */
 //====================================================
-
+/* 
 console.log ('n:', n);
 n += 1;
 console.log('n:',n);
@@ -75,9 +73,9 @@ n++;
 console.log('n:',n);
 console.log('n:',n++);
 console.log('n:',n);
-
+ */
 //===========================================
-console.log('n:', n);
+/* console.log('n:', n);
 n-=1;
 console.log('n:',n);
 
@@ -93,12 +91,11 @@ n--;
 n--;
 console.log('n:',n);
 console.log('n:',n--);
-console.log('n:',n);
-console.clear();
+console.log('n:',n); */
 //===========================
 
 //비교연산자 > (왼쪽값 비교 오른쪽값) 결과 true/false
-
+/* 
 var m=30;
 var rel = n <= m;
 console.log('n:' + n, 'm:'+ m, 'result:' + rel);
@@ -116,8 +113,7 @@ console.log( ck1)
 
 var ck2 = true || true;
 console.log( ck2)
-//둘중 하나라고 true면 true
-console.clear();
+//둘중 하나라고 true면 true */
 //============================
 //삼항연산자 -> 조건? true일때 경과 : false일때 결과 ;
 

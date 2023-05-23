@@ -28,6 +28,7 @@ var fn2 = function(a){
 };
 
 console.log(fn2(3));
+console.clear()
 //========================
 //전역변수
 var a = 10;
@@ -40,7 +41,7 @@ console.log(a)
 func();
 console.log(a)
 
-console.clear();
+console.clear()
 //=======================
 //지역변수
 
@@ -51,7 +52,6 @@ var func2 = function(){
 
 func2();
 //console.log( b ); function안의 변수는 funcrion외부에 적용하지 않는다
-console.clear();
 //=========================================
 var btn = document.querySelector('.btn');
 var btn_content = document.querySelector('.btn_content');
