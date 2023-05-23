@@ -9,24 +9,123 @@
 
 /*headerBox======================================================================*/
 #header_box{
-  width: 100%; height: 90px;
-  background-color: #180A54;}
+  position: fixed; top: 0; left: 0; z-index: 1400;
+  width: 100vw; height: 90px;}
 .header_icon{
   float: left;
   width: 83px; height: 24px;
-  margin-top: 30px; margin-left: 30px;
-  background-color: #85D3B5;}
+  margin-top: 30px; margin-left: 10px;}
+/*====================================================*/
 .head_tab{
   float: right;
-  width: 90%; height: 90px;
-  background-color: #49E808;}
+  width: 1100px; height: 90px;
+  padding-top: 30px; box-sizing: border-box;
+}
+
+
+.head_tab dl {
+  position: relative;
+  display:inline-block;
+  width: auto;height: auto;
+  margin: auto;
+  margin-left: 10px;
+} 
+
+  .head_tab button {
+    width: 100%; height: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;}
+
+  .head_tab dd{ 
+    display: none;
+    position: absolute; top: 25px;
+    width: 250px; height:auto;
+    padding: 0 10px; box-sizing: border-box;
+    border-top: 10px solid #A410FA;
+
+    background-color: #fff;
+  }
+  .head_tab dd a{
+    display: block;
+    line-height: 50px; font-size: 20px;
+    text-decoration: underline;
+  }
+  .head_tab dl.on dd{ display: block;}
+  
 
 /*slideBox======================================================================*/
   #slideBox{
     width: 100%; height:700px;
-    background-color: #715439;
   }
 
+  .slideBox_area{
+    
+    width: 200%; height: 700px;
+  }
+  .slideBox_area>div{ 
+    float: left;
+  }
+
+  .slideBox_area_01{
+    position: relative;
+    width: 50%; height: 700px;
+    background-image: url(../../img/slideBox/main_slider01.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .slideBox_area_01 .slideBoxinBox{
+    position: absolute; top: 50%; left: 50%;
+    width: 500px; height: 200px;
+  }
+  .slideBox_area_01 .slideBox_logo {
+    width: 100%;height: 50%;
+    margin-bottom: 20px;
+    background-image: url(../../img/slideBox/slider_img01.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  } 
+  .slideBox_area_01 .slideBox_text{
+    width: 100%; height: 50%; 
+    font-size: 20px; font-weight: 400;
+    text-align: center;
+    line-height:30px;
+    color: #fff;
+  }
+
+
+
+  .slideBox_area_02 {
+    position: relative;
+    width: 50%; height: 700px;
+    background-image: url(../../img/slideBox/main_slider02.jpg) ;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .slideBox_area_02 .slideBoxinBox{
+    position: absolute; top: 30%; left: 60%;
+    width: 500px; height: 200px;
+  }
+  .slideBox_area_02 .slideBox_logo {
+    width: 100%;height: 50%;
+    margin-bottom: 20px;
+    background-image: url(../../img/slideBox/slider_img01.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+  } 
+  .slideBox_area_02 .slideBox_text{
+    width: 100%; height: 50%; 
+    font-size: 30px; font-weight: 700;
+    line-height:30px;
+    color: #fff;
+  }
+  .slideBox_area_02 .slideBox_text_02{
+    width: 100%; height: 50%; 
+    font-size: 20px; font-weight: 400;
+    line-height:30px;
+    color: #fff;
+  }
 
 /*introductionBox======================================================================*/
 #introductionBox{
