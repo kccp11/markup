@@ -26,8 +26,6 @@ var intList = [{
   },
 ]
 
-
-
 var technologyBoxList = [
   {
     link : '#',
@@ -61,6 +59,26 @@ var technologyBoxList = [
   },
 ]
 
+//외부 html문서 불러오기
+var headerBox = $('#header_box');
+var slideBox = $('#slideBox');
+var introductionBox = $('#introductionBox');
+var technologyBox = $('#technologyBox');
+var promotionBox = $('#promotionBox');
+var RecruitBox = $('#RecruitBox');
+var footBox = $('#footBox');
+var imopirtUrl = '../page/imopirtHtml/';
+var imopirtHtml = ["header_box.html","slideBox.html","introductionBox.html","technologyBox.html","promotionBox.html","RecruitBox.html"];
+
+headerBox.load(imopirtUrl + imopirtHtml[0]);
+slideBox.load(imopirtUrl + imopirtHtml[1]);
+introductionBox.load(imopirtUrl + imopirtHtml[2]);
+technologyBox.load(imopirtUrl + imopirtHtml[3]);
+promotionBox.load(imopirtUrl + imopirtHtml[4]);
+RecruitBox.load(imopirtUrl + imopirtHtml[5]);
+footBox.load('../page/common/footBox.html');
+
+
 //변수
 var wrap = $('#wrap')
 var headerBox = wrap.find('#header_box')
@@ -69,7 +87,7 @@ var headDl = headTab.children('dl')
 var headDt = headDl.children('dt')
 var headDd = headDl.children('dd')
 var timed = 300;
-//이벤트클릭시 나오는 이벤트
+//이벤트 클릭시 나오는 이벤트
 /* headDt.on('click',function(e){
  e.preventDefault();
   var _this =$(this);
@@ -112,15 +130,15 @@ var slideBox = $('#slideBox')
 var sliArea = slideBox.children('.slideBox_area')
 var sliArea1 = sliArea.children('.slideBox_area_01')
 var sliArea2 = sliArea.children('.slideBox_area_02')
-timed = 1000;
-/* 
+var timed = 1000;
+
 //함수
 var slideE
 //일정시간 마다 동작
 setInterval(function(){
-
+  sliArea1
 },timed);
- */
+
 //introductionBox====================================
 
 var introductionBox = $('#introductionBox');
@@ -196,7 +214,36 @@ for (i = 0; i < techLEn; i += 1) {
 }
 
 //promotionBox
+//promotionBox_area_02안에있는 youtybe아이콘을 클릭시 모달윈도우하 활성화 되면서
+//유튜브 영상을 볼수있게하고 닫기 버튼을 누르면 사라지게 만듬
+var promotionBox = $('#promotionBox')
+var proArea02 = promotionBox.children('.promotionBox_area_02')
+var proArea02Btn =proArea02.find('button')
 
+var modalWindow = promotionBox.children('.modal_window');
+var modBtn = modalWindow.children('.modal_data').find('button')
+var youtubeFrame = modalWindow.find('iframe');
 
+proArea02Btn.on('click',function(e){
+  e.preventDefault();
+  modalWindow.addClass('on');
+  youtubeFrame.attr('src', 'https://www.youtube.com/embed/BLCc40bKIH4?autoplay=1');
+})
+
+modBtn.on('click',function(e){
+  e.preventDefault();
+  modalWindow.removeClass('on');
+  youtubeFrame.attr('src', '');
+})
+//RecruitBox
+
+//아이콘 클릭시 화면이 최상단으로 이동
+
+var footBoxI = footBox.find(i)
+
+footBoxI.on('click',function(e){
+  e.preventDefault();
+  $('html').animate({scrollTop:0+'px'})
+});
 
 })(jQuery);

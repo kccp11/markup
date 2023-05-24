@@ -1,0 +1,24 @@
+      <div class="technologyBox_area">
+        <div class="font_01">모비스의 보유기술</div>
+        <ul class="font_02">
+          <li>기초과학 거대<br />시설물의 물리학적 이해</li>
+          <li>가속기, 핵융합로<br />제어시스템의 설계 지식</li>
+        </ul>
+      </div>
+      <div class="technologyBox_area_02">
+        <ul class="clearfix">
+     <!-- <li>
+            <div class="techonlnk">
+              <a href="">
+                <div class="techImg">
+                  
+                </div>
+              </a>
+              <div class="techcon">
+
+              </div>
+            </div>
+
+          </li> -->
+        </ul>
+      </div>
