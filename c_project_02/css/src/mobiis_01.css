@@ -4,7 +4,7 @@
   width: 100%;height: 100%;
   background-color: #eee;
 }
-.font_01{ width: 80%; font-size: 30px; margin: auto; margin-bottom: 30px; text-align: center;}
+.font_01{ width: 80%; font-size: 30px; font-weight: 700; margin: auto; margin-bottom: 30px; text-align: center;}
 .font_02{ width: 95%;margin: auto; line-height: 20px; font-size: 20px; text-align: center;}
 
 /*headerBox======================================================================*/
@@ -130,16 +130,50 @@
 /*introductionBox======================================================================*/
 #introductionBox{
   width: 100%; height: 730px;
-  background-color: #000;
+  background-color: #589AFE;
 }
 
 .introductionBox_area{
-
   width: 100%; height: 200px;
   padding: 50px 0;box-sizing: border-box;
   background-color: #eee;
 }
 
+.introductionBox_area_02 div {
+  float: left;
+  width: 25%;height: 530px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.introductionBox_area_02 dl{
+  width: 100%; height: 530px;
+  padding-top: 100px; box-sizing: border-box;
+}
+
+.introductionBox_area_02 dl dt {
+  display: block;
+  width: 100%; height: 50px;
+  margin: 20px;
+  font-size: 30px;
+  color: #fff;
+}
+.introductionBox_area_02 .intcon{
+  display: block;
+  width: 80%; height: 148px;
+  margin: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+.introductionBox_area_02 .intlink {
+  display: block;
+  width: 120px; height: 40px;
+  margin-left: 20px;
+  padding: 5px 0 0 15px;box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 50px;
+  color: #fff;
+}
 
 /*technologyBox======================================================================*/
 #technologyBox{
@@ -147,11 +181,54 @@
   background-color: #589AFE;
 }
 .technologyBox_area{
-
   width: 100%; height: 200px;
   padding: 50px 0;box-sizing: border-box;
   background-color: #eee;
 }
+.technologyBox_area_02{
+  width: 100%; height: 100%;
+  background-image: url(../../img/technologyBox/Rectangle\ 8.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.technologyBox_area_02 ul {
+  width: 100%; height: 100%;
+}
+.technologyBox_area_02 ul li {
+  float: left;
+  width: 33.333333%; height: 30%;
+}
+
+.technologyBox_area_02 .techonlnk{
+  width: 90%; height: 100%;
+  padding: 30px; padding-top: 100px; box-sizing: border-box;
+}
+
+
+.technologyBox_area_02 .techonlnk a {
+  display: block;
+  width: 170px; height: 170px;
+  margin: auto; margin-bottom: 30px;
+}
+
+
+.technologyBox_area_02 .techImg {
+  width: 100%; height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+
+.technologyBox_area_02 .techcon {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+
 
 
 /*promotionBox======================================================================*/
@@ -160,21 +237,41 @@
   background-color: #A410FA;
 }
 .promotionBox_area{
-
   width: 100%; height: 250px;
   padding: 50px 0;box-sizing: border-box;
   background-color: #eee;
 }
-.promotionBox_area > a {
+.promotionBox_area > div > a {
   display: block;
-  width: 175px; height: 40px;
+  width: 170px; height: 40px;
+  text-align: center;padding: 10px; box-sizing: border-box;
   margin: auto;margin-top: 20px;
   border: 1px solid #000;
 }
-.promotionBox_area > a > div {
+.promotionBox_area_02 {
   width: 100%; height: 100%;
-  text-align: center;padding: 10px; box-sizing: border-box;
+  background-image: url(../../img/RecruitBox/main_bg02.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
+.promotionBox_area_02 .font_01{
+  padding: 50px 0; box-sizing: border-box;
+  color: #fff
+}
+.promotionBox_area_02 .font_02 {
+  color: #fff;
+}
+.promotionBox_area_02 div > button{
+  display: block;
+  width: 130px; height: 100px;
+  margin: auto;margin-top: 50px;
+}
+.promotionBox_area_02 button > i {
+  font-size: 130px;
+}
+
+
 
 /*RecruitBox======================================================================*/
 #RecruitBox{
